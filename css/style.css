@@ -272,7 +272,7 @@ p:last-child { margin-bottom: 0; }
    ============================================ */
 .pillar-strip {
   background: var(--cream);
-  padding: 56px 0;
+  padding: 72px 0;
 }
 .pillar-strip-inner {
   max-width: var(--max-w);
@@ -286,20 +286,30 @@ p:last-child { margin-bottom: 0; }
   background: var(--white);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.06);
-  transition: transform 0.18s, box-shadow 0.18s;
+  border: 1px solid rgba(0,0,0,0.07);
+  transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 .pillar-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+  border-color: var(--accent);
+}
+.pillar-item:hover .pillar-arrow {
+  transform: translateX(4px);
 }
 .pillar-item-img {
-  height: 160px;
+  height: 180px;
   overflow: hidden;
   background: var(--cream);
 }
-.pillar-item-img img { width: 100%; height: 100%; object-fit: cover; }
-.pillar-item-body { padding: 20px; }
+.pillar-item-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.pillar-item:hover .pillar-item-img img { transform: scale(1.04); }
+.pillar-item-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
 .pillar-tag {
   font-family: var(--font-h);
   font-size: 0.62rem;
@@ -307,14 +317,33 @@ p:last-child { margin-bottom: 0; }
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--accent);
-  background: rgba(255,204,0,0.1);
+  background: rgba(255,204,0,0.12);
   padding: 3px 8px;
   border-radius: 2px;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
-.pillar-item-body h3 { font-size: 0.95rem; margin-bottom: 6px; }
-.pillar-item-body p { font-size: 0.82rem; color: var(--mid-grey); margin: 0; }
+.pillar-item-body h3 { font-size: 1rem; margin-bottom: 8px; }
+.pillar-item-body p { font-size: 0.84rem; color: var(--mid-grey); margin: 0 0 20px; flex: 1; }
+.pillar-cta {
+  font-family: var(--font-h);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+.pillar-arrow {
+  display: inline-block;
+  transition: transform 0.22s;
+  color: var(--accent);
+  font-size: 1rem;
+}
 
 /* ============================================
    DIFF STRIP (3-up)
@@ -949,6 +978,8 @@ footer {
   .diff-item:last-child { border-bottom: none; }
   .grid-2, .split-inner { grid-template-columns: 1fr; gap: 32px; }
   .split-inner.rev { direction: ltr; }
+  /* Fix split-inner.rev: show text before image on mobile */
+  .split-inner.rev > .split-text { order: -1; }
   .grid-3, .grid-4, .cards-row.cols-3, .cards-row.cols-4 { grid-template-columns: 1fr; }
   .cards-row.cols-2 { grid-template-columns: 1fr; }
   .serve-cards { grid-template-columns: 1fr; }
@@ -969,6 +1000,19 @@ footer {
   .n2-tease-inner { padding: 0 20px; }
   h1 { font-size: 1.9rem; }
   h2 { font-size: 1.5rem; }
+  /* Constrain photos/images to avoid full-screen takeover */
+  .split-img img { max-height: 300px; }
+  /* who-we-serve: inline-style segment grids collapse to single column */
+  .segment-block { display: grid !important; grid-template-columns: 1fr !important; gap: 32px !important; direction: ltr !important; }
+  .segment-block-rev > div:first-child { order: 2; }
+  /* who-we-serve: "resonates" section */
+  .feel-this-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 32px !important; }
+  /* n2: breakdown diagram split has inline column override */
+  .n2-breakdown-split { grid-template-columns: 1fr !important; }
+  .n2-breakdown-split .split-img img { max-height: 380px; object-fit: contain; }
+  /* reach-out: hero grid collapses; form padding reduced */
+  .reach-out-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 40px !important; }
+  .reach-out-grid > div:last-child { padding: 28px 20px !important; }
 }
 
 @media (max-width: 480px) {
