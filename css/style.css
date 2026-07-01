@@ -836,7 +836,7 @@ p:last-child { margin-bottom: 0; }
 .article-cta-box a { color: var(--white); font-weight: 600; }
 .article-cta-box a:hover { color: var(--accent); }
 
-.article-layout { max-width: 780px; margin: 0 auto; }
+.article-layout { max-width: var(--max-w); margin: 0 auto; }
 .article-back {
   display: inline-flex; align-items: center; gap: 8px;
   font-family: var(--font-h); font-size: 0.72rem; font-weight: 700;
@@ -874,6 +874,40 @@ p:last-child { margin-bottom: 0; }
 }
 @media (max-width: 640px) {
   .article-prose .diagram-img-float { float: none; width: 100%; max-width: none; margin: 24px 0; }
+}
+
+.article-prose table.info-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  font-size: 0.95rem; line-height: 1.7;
+}
+.article-prose table.info-table th {
+  background: var(--accent); color: var(--dark); font-weight: 700;
+  text-align: left; padding: 12px 20px; font-size: 0.95rem;
+}
+.article-prose table.info-table td {
+  padding: 14px 20px; border-bottom: 1px solid #f0dd7a; vertical-align: top;
+  color: var(--grey);
+}
+.article-prose table.info-table tr:last-child td { border-bottom: none; }
+.article-prose table.info-table td:first-child, .article-prose table.info-table th:first-child {
+  font-weight: 700; color: var(--dark); white-space: nowrap;
+}
+.article-prose table.info-table ul { margin: 0; padding: 0 0 0 1.1em; }
+.article-prose table.info-table li { font-size: 0.95rem; margin-bottom: 0.4em; color: var(--grey); }
+.article-prose table.info-table li:last-child { margin-bottom: 0; }
+.article-prose table.info-table .tag-dark {
+  background: var(--dark); color: var(--accent); padding: 3px 10px;
+  border-radius: 4px; font-weight: 700; white-space: nowrap;
+}
+.article-prose table.info-table--wide {
+  font-size: 0.82rem;
+}
+.article-prose table.info-table--wide th,
+.article-prose table.info-table--wide td { padding: 10px 12px; }
+.article-prose table.info-table--wide td:first-child,
+.article-prose table.info-table--wide th:first-child { white-space: normal; }
+@media (max-width: 640px) {
+  .article-prose table.info-table { display: block; overflow-x: auto; white-space: nowrap; }
 }
 .article-divider { border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 48px 0; }
 
