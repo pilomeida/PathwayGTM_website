@@ -868,6 +868,10 @@ p:last-child { margin-bottom: 0; }
 .article-prose blockquote p { font-size: 1rem; font-style: italic; color: var(--dark); margin: 0; font-weight: 500; }
 .article-prose strong { color: var(--dark); font-weight: 600; }
 .article-prose .diagram-img { width: 100%; border-radius: var(--radius-lg); margin: 32px 0; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+.article-prose .diagram-img--banner { aspect-ratio: 3.7 / 1; object-fit: cover; }
+@media (max-width: 768px) {
+  .article-prose .diagram-img--banner { aspect-ratio: 16 / 9; }
+}
 .article-prose .diagram-img-float {
   float: right; width: 45%; max-width: 320px;
   border-radius: var(--radius-lg); margin: 4px 0 24px 56px;
