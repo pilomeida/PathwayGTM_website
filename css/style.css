@@ -854,8 +854,8 @@ p:last-child { margin-bottom: 0; }
   padding: 4px 10px; border-radius: var(--radius);
 }
 .article-featured-img { width: 100%; border-radius: var(--radius-lg); margin-bottom: 48px; display: block; }
-.article-prose h2 { font-size: 1.3rem; margin: 44px 0 16px; color: var(--dark); }
-.article-prose h3 { font-size: 1.05rem; margin: 32px 0 12px; color: var(--dark); }
+.article-prose h2 { font-size: 1.3rem; margin: 44px 0 16px; color: var(--dark); clear: both; }
+.article-prose h3 { font-size: 1.05rem; margin: 32px 0 12px; color: var(--dark); clear: both; }
 .article-prose p { font-size: 0.95rem; line-height: 1.85; margin-bottom: 1.3em; color: var(--grey); }
 .article-prose ul, .article-prose ol { margin: 0 0 1.4em 1.6em; }
 .article-prose li { font-size: 0.95rem; line-height: 1.8; color: var(--grey); margin-bottom: 0.5em; }
@@ -867,6 +867,14 @@ p:last-child { margin-bottom: 0; }
 .article-prose blockquote p { font-size: 1rem; font-style: italic; color: var(--dark); margin: 0; font-weight: 500; }
 .article-prose strong { color: var(--dark); font-weight: 600; }
 .article-prose .diagram-img { width: 100%; border-radius: var(--radius-lg); margin: 32px 0; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+.article-prose .diagram-img-float {
+  float: right; width: 45%; max-width: 320px;
+  border-radius: var(--radius-lg); margin: 4px 0 24px 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+@media (max-width: 640px) {
+  .article-prose .diagram-img-float { float: none; width: 100%; max-width: none; margin: 24px 0; }
+}
 .article-divider { border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 48px 0; }
 
 /* ============================================
