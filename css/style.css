@@ -878,7 +878,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .article-prose table.info-table {
-  width: auto; max-width: 820px; border-collapse: collapse; margin: 32px 0;
+  width: auto; max-width: 820px; border-collapse: collapse; margin: 32px auto;
   font-size: 0.95rem; line-height: 1.7;
 }
 .article-prose table.info-table th {
