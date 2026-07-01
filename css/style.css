@@ -26,7 +26,7 @@
 
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--nav-h) + 24px); }
 body {
   font-family: var(--font-b);
   color: var(--dark);
@@ -508,6 +508,7 @@ p:last-child { margin-bottom: 0; }
   transform: translateY(-3px);
   box-shadow: 0 8px 32px rgba(0,0,0,0.07);
 }
+.category-card.active { border-color: var(--accent); background: var(--cream); box-shadow: 0 8px 32px rgba(0,0,0,0.07); }
 .card-icon {
   width: 44px; height: 44px;
   background: rgba(255,204,0,0.1);
