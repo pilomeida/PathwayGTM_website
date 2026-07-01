@@ -857,7 +857,8 @@ p:last-child { margin-bottom: 0; }
 .article-prose h2 { font-size: 1.3rem; margin: 44px 0 16px; color: var(--dark); clear: both; }
 .article-prose h3 { font-size: 1.05rem; margin: 32px 0 12px; color: var(--dark); clear: both; }
 .article-prose p { font-size: 0.95rem; line-height: 1.85; margin-bottom: 1.3em; color: var(--grey); }
-.article-prose ul, .article-prose ol { margin: 0 0 1.4em 1.6em; }
+.article-prose ul { list-style: disc; margin: 0 0 1.4em 1.6em; }
+.article-prose ol { list-style: decimal; margin: 0 0 1.4em 1.6em; }
 .article-prose li { font-size: 0.95rem; line-height: 1.8; color: var(--grey); margin-bottom: 0.5em; }
 .article-prose blockquote {
   border-left: 4px solid var(--accent); padding: 16px 24px;
@@ -877,7 +878,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .article-prose table.info-table {
-  width: 100%; border-collapse: collapse; margin: 32px 0;
+  width: auto; max-width: 820px; border-collapse: collapse; margin: 32px 0;
   font-size: 0.95rem; line-height: 1.7;
 }
 .article-prose table.info-table th {
@@ -892,7 +893,7 @@ p:last-child { margin-bottom: 0; }
 .article-prose table.info-table td:first-child, .article-prose table.info-table th:first-child {
   font-weight: 700; color: var(--dark); white-space: nowrap;
 }
-.article-prose table.info-table ul { margin: 0; padding: 0 0 0 1.1em; }
+.article-prose table.info-table ul { list-style: disc; margin: 0; padding: 0 0 0 1.1em; }
 .article-prose table.info-table li { font-size: 0.95rem; margin-bottom: 0.4em; color: var(--grey); }
 .article-prose table.info-table li:last-child { margin-bottom: 0; }
 .article-prose table.info-table .tag-dark {
@@ -900,7 +901,7 @@ p:last-child { margin-bottom: 0; }
   border-radius: 4px; font-weight: 700; white-space: nowrap;
 }
 .article-prose table.info-table--wide {
-  font-size: 0.82rem;
+  font-size: 0.82rem; max-width: 100%;
 }
 .article-prose table.info-table--wide th,
 .article-prose table.info-table--wide td { padding: 10px 12px; }
