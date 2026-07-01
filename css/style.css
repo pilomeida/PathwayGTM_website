@@ -815,6 +815,42 @@ p:last-child { margin-bottom: 0; }
 .blog-more:hover { gap: 10px; }
 
 /* ============================================
+   ARTICLE / BLOG POST
+   ============================================ */
+.article-layout { max-width: 780px; margin: 0 auto; }
+.article-back {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-h); font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--mid-grey); text-decoration: none; margin-bottom: 40px;
+}
+.article-back:hover { color: var(--dark); }
+.article-meta-bar {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 28px;
+  font-family: var(--font-h); font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--mid-grey);
+}
+.article-meta-bar .tag {
+  background: var(--accent); color: var(--dark);
+  padding: 4px 10px; border-radius: var(--radius);
+}
+.article-featured-img { width: 100%; border-radius: var(--radius-lg); margin-bottom: 48px; display: block; }
+.article-prose h2 { font-size: 1.3rem; margin: 44px 0 16px; color: var(--dark); }
+.article-prose h3 { font-size: 1.05rem; margin: 32px 0 12px; color: var(--dark); }
+.article-prose p { font-size: 0.95rem; line-height: 1.85; margin-bottom: 1.3em; color: var(--grey); }
+.article-prose ul, .article-prose ol { margin: 0 0 1.4em 1.6em; }
+.article-prose li { font-size: 0.95rem; line-height: 1.8; color: var(--grey); margin-bottom: 0.5em; }
+.article-prose blockquote {
+  border-left: 4px solid var(--accent); padding: 16px 24px;
+  margin: 36px 0; background: var(--cream);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.article-prose blockquote p { font-size: 1rem; font-style: italic; color: var(--dark); margin: 0; font-weight: 500; }
+.article-prose strong { color: var(--dark); font-weight: 600; }
+.article-prose .diagram-img { width: 100%; border-radius: var(--radius-lg); margin: 32px 0; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+.article-divider { border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 48px 0; }
+
+/* ============================================
    FORM
    ============================================ */
 .form { display: flex; flex-direction: column; gap: 18px; }
