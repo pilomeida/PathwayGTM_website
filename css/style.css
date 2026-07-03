@@ -956,6 +956,30 @@ p:last-child { margin-bottom: 0; }
 }
 .article-divider { border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 48px 0; }
 
+/* --- Checklist grid (WP-labeled, borderless "invisible table") --- */
+.checklist-grid { display: flex; flex-direction: column; gap: 30px; margin: 28px 0 40px; }
+.checklist-row { display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: start; }
+.checklist-label {
+  display: flex; flex-direction: column; gap: 4px;
+  padding-left: 14px; border-left: 2px solid var(--accent);
+  margin: 0;
+}
+.checklist-num {
+  font-family: var(--font-h); font-size: 0.68rem; font-weight: 700;
+  color: var(--mid-grey); letter-spacing: 0.1em;
+}
+.checklist-wp {
+  font-family: var(--font-h); font-size: 0.85rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em; color: var(--dark);
+  line-height: 1.35;
+}
+.checklist-content { margin: 0; }
+.checklist-content p { margin: 0; font-size: 0.95rem; line-height: 1.85; color: var(--grey); }
+.checklist-content em { color: var(--dark); font-style: italic; }
+@media (max-width: 640px) {
+  .checklist-row { grid-template-columns: 1fr; gap: 10px; }
+}
+
 /* ============================================
    FORM
    ============================================ */
