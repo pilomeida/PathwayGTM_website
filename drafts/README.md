@@ -9,7 +9,7 @@ Read `VOICE-NOTES.md` and `EDITORIAL-PRINCIPLES.md` before drafting any of these
 
 | # | File | WP | Publish target | Status |
 |---|---|---|---|---|
-| 1 | [01-blog-gtm-health-check.md](01-blog-gtm-health-check.md) | Cross-WP diagnostic (Module 1) | 2026-07-23 | **HTML produced** — `../blog-gtm-health-check.html`, screenshot-verified against the site template. Not yet wired into the site (beyond-the-brief.html listing, misalignment.html's teaser text and reciprocal nav link, PT/ES translation) — flagged for Pedro. |
+| 1 | [01-blog-gtm-health-check.md](01-blog-gtm-health-check.md) | Cross-WP diagnostic (Module 1) | **PUBLISHED 2026-07-03** | Live in EN/PT/ES: `../blog-gtm-health-check.html`, `../pt/blog-gtm-health-check.html`, `../es/blog-gtm-health-check.html`. Listing card, misalignment.html teaser/nav fix, and banner image all done in all 3 languages. Committed and pushed to origin/main. |
 | 2 | [02-blog-agility-coordination.md](02-blog-agility-coordination.md) | Agility & Coordination | 2026-08-20 | Outline ready — both STARs confirmed |
 | 3 | [03-blog-gtm-target-strategy.md](03-blog-gtm-target-strategy.md) | GTM Target & Strategy | 2026-09-03 | Outline ready |
 | 4 | [04-blog-icp-customer-experience.md](04-blog-icp-customer-experience.md) | ICP & Customer Experience | 2026-09-17 | Outline ready |

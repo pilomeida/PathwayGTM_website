@@ -58,6 +58,7 @@ See `VOICE-NOTES.md` for the full register (sparing bold, aphoristic blockquotes
 - **Always "we," never "I."** No exceptions, including inside real personal-experience material. See §7 for why.
 - **No em dashes.** Plain hyphens, or restructure into two sentences.
 - **No company, employer, or product names, ever.** See §7.
+- **Category = the article's primary N² Module, not a generic label.** See `VOICE-NOTES.md`'s "Category & format system" section for the 4 categories, their slugs/icons, and the meta-bar's category/format/read-time structure. Set this correctly when drafting — don't leave it as a placeholder to fix later, that's exactly how the site drifted out of sync the first time.
 
 ## 7. Anonymization (hard rule — privacy, not style)
 

@@ -22,9 +22,24 @@ Extracted from the 6 shipped articles (designing-growth, conscious-design, misal
 - Check: could a reader who knows Pedro's work history match this passage to a specific employer or product from what's written? If yes, generalize further.
 
 ## Structural elements to reuse
-- `.article-meta-bar`: tag · N² module/WP tag · read time
+- `.article-meta-bar`: **category · format · read time** (redesigned 2026-07-03 — see below; was previously an inconsistent tag + module-tag-or-nothing pairing).
 - Banner diagram image after the opening hook (`diagram-img diagram-img--banner`)
 - `.article-cta-box` — reuse existing copy verbatim (reach-out + partner links)
 - `.article-nav-bar` — prev/next between articles (arrows point by publish-date order, not reading order — see pathwaygtm-site-clone-patterns.md)
 - No yellow CTA band on article pages — nav + CTA box only
-- "Coming Next" section teases the next article by name/theme, every time
+- "Coming Next" section teases the next article by name/theme, every time — link directly to the article once it's published; don't promise a date
+
+## Category & format system (2026-07-03 — replaces the old ad hoc tags)
+The site's "Explore by Category" filter and every article's meta-bar slot 1 now use the **same 4 categories, mapped directly to N²'s own Modules** — not generic blog-category labels. This was a deliberate harmonization: the old categories (GTM Strategy / Execution / Leadership / Technology & Data) were never tied to anything structural, had drifted out of sync with each article's actual filter tag on ~half the shipped articles, and "Technology & Data" had zero content and no plausible content in the next 5 planned articles either.
+
+**The 4 categories (slug → label → icon):**
+- `gtm-readiness` → GTM Readiness → compass
+- `deal-generation` → Deal Generation → forward-arrow
+- `customer-success` → Customer Success → hand-holding-heart
+- `govern-steer` → Govern & Steer → gear
+
+Assign every new article's category by its primary N² Module (WP-level articles map directly — see each `drafts/0N-*.md` file's `wp:` field). An article spanning multiple modules gets a multi-value `data-category` on its listing card (space-separated, for filtering) but only its primary module in the visible tag and meta-bar slot 1, to avoid a cluttered badge.
+
+**Meta-bar slot 2 is now always format**, not a repeated module tag: "Resource / Playbook," "Quick Take," or "Long-form Insight" (case-in-point/other formats can be added as they're needed). This resolved the redundancy that would otherwise exist between slot 1 (now the module) and the old slot 2 (which used to say "Nexus: [same module]").
+
+**Known imbalance, accepted deliberately:** 6 of 7 shipped articles are `gtm-readiness`. This is an honest reflection of the site being Nexus-heavy so far, not a tagging error — it self-corrects as Module 2/3/4 articles (Lead Generation is next, per the calendar) ship.
