@@ -4,22 +4,25 @@
     "title": "Pathway's 10-Point GTM Health Check",
     "slug": "blog-gtm-health-check",
     "wp": "Cross-WP diagnostic (Module 1)",
-    "track": "A",
     "source": "",
     "category": "gtm-readiness",
     "format": "Resource / Playbook",
     "publishTarget": "2026-07-03",
     "status": "published",
     "draftFile": "drafts/01-blog-gtm-health-check.md",
-    "heroImage": null,
-    "teaser": ""
+    "heroImage": "Site Assets/Blog_Images/gtm-health-check-banner.jpg",
+    "teaser": "GTM breaks for several distinct reasons, not one. Name yours, then diagnose exactly where it shows up with Pathway's 10-point GTM Health Check.",
+    "scope": "generic",
+    "backing": [
+      "star",
+      "resource"
+    ]
   },
   {
     "id": "2",
     "title": "The Structure Behind a Team That Can Scale",
     "slug": "blog-agility-coordination",
     "wp": "Agility & Coordination",
-    "track": "B",
     "source": "star-hyperion-team-recovery + star-ericsson-cloud-structure-to-scale",
     "category": "gtm-readiness",
     "format": "Long-form Insight",
@@ -27,14 +30,17 @@
     "status": "outline",
     "draftFile": "drafts/02-blog-agility-coordination.md",
     "heroImage": null,
-    "teaser": ""
+    "teaser": "",
+    "scope": "focused",
+    "backing": [
+      "star"
+    ]
   },
   {
     "id": "3",
     "title": "Setting Targets Before You Have Proof",
     "slug": "blog-gtm-target-strategy",
     "wp": "GTM Target & Strategy",
-    "track": "B",
     "source": "star-ericsson-cloud-growth-plan",
     "category": "gtm-readiness",
     "format": "Long-form Insight",
@@ -42,14 +48,17 @@
     "status": "outline",
     "draftFile": "drafts/03-blog-gtm-target-strategy.md",
     "heroImage": null,
-    "teaser": ""
+    "teaser": "",
+    "scope": "focused",
+    "backing": [
+      "star"
+    ]
   },
   {
     "id": "4",
     "title": "Jobs, Not Personas: Rethinking ICP",
     "slug": "blog-icp-customer-experience",
     "wp": "ICP & Customer Experience",
-    "track": "C",
     "source": "JTBD (Ulwick) + Gartner journey-mapping",
     "category": "gtm-readiness",
     "format": "Long-form Insight",
@@ -57,14 +66,17 @@
     "status": "outline",
     "draftFile": "drafts/04-blog-icp-customer-experience.md",
     "heroImage": null,
-    "teaser": ""
+    "teaser": "",
+    "scope": "focused",
+    "backing": [
+      "resource"
+    ]
   },
   {
     "id": "5",
     "title": "The GTM Failure Five Sources Keep Naming",
     "slug": "blog-customer-messaging",
     "wp": "Customer Messaging",
-    "track": "C",
     "source": "Cognism/HubSpot/House of Revenue/ZoomInfo failure cluster",
     "category": "gtm-readiness",
     "format": "Long-form Insight",
@@ -72,14 +84,17 @@
     "status": "outline",
     "draftFile": "drafts/05-blog-customer-messaging.md",
     "heroImage": null,
-    "teaser": ""
+    "teaser": "",
+    "scope": "focused",
+    "backing": [
+      "resource"
+    ]
   },
   {
     "id": "6",
     "title": "Should We Even Pursue This?",
     "slug": "blog-lead-generation",
     "wp": "Lead Generation",
-    "track": "B",
     "source": "star-schreder-lead-qualification",
     "category": "deal-generation",
     "format": "Long-form Insight",
@@ -87,6 +102,10 @@
     "status": "outline",
     "draftFile": "drafts/06-blog-lead-generation.md",
     "heroImage": null,
-    "teaser": ""
+    "teaser": "",
+    "scope": "focused",
+    "backing": [
+      "star"
+    ]
   }
 ]
