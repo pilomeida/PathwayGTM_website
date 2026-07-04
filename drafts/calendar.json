@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "title": "Cross-WP diagnostic (Module 1)",
+    "title": "Pathway's 10-Point GTM Health Check",
     "slug": "blog-gtm-health-check",
     "wp": "Cross-WP diagnostic (Module 1)",
     "track": "A",
@@ -16,7 +16,7 @@
   },
   {
     "id": "2",
-    "title": "Agility & Coordination",
+    "title": "The Structure Behind a Team That Can Scale",
     "slug": "blog-agility-coordination",
     "wp": "Agility & Coordination",
     "track": "B",
@@ -31,7 +31,7 @@
   },
   {
     "id": "3",
-    "title": "GTM Target & Strategy",
+    "title": "Setting Targets Before You Have Proof",
     "slug": "blog-gtm-target-strategy",
     "wp": "GTM Target & Strategy",
     "track": "B",
@@ -46,7 +46,7 @@
   },
   {
     "id": "4",
-    "title": "ICP & Customer Experience",
+    "title": "Jobs, Not Personas: Rethinking ICP",
     "slug": "blog-icp-customer-experience",
     "wp": "ICP & Customer Experience",
     "track": "C",
@@ -61,7 +61,7 @@
   },
   {
     "id": "5",
-    "title": "Customer Messaging",
+    "title": "The GTM Failure Five Sources Keep Naming",
     "slug": "blog-customer-messaging",
     "wp": "Customer Messaging",
     "track": "C",
@@ -76,7 +76,7 @@
   },
   {
     "id": "6",
-    "title": "Lead Generation",
+    "title": "Should We Even Pursue This?",
     "slug": "blog-lead-generation",
     "wp": "Lead Generation",
     "track": "B",
