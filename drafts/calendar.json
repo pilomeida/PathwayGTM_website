@@ -4,6 +4,11 @@
     "title": "Pathway's 10-Point GTM Health Check",
     "slug": "blog-gtm-health-check",
     "wp": "Cross-WP diagnostic (Module 1)",
+    "scope": "generic",
+    "backing": [
+      "star",
+      "resource"
+    ],
     "source": "",
     "category": "gtm-readiness",
     "format": "Resource / Playbook",
@@ -12,17 +17,17 @@
     "draftFile": "drafts/01-blog-gtm-health-check.md",
     "heroImage": "Site Assets/Blog_Images/gtm-health-check-banner.jpg",
     "teaser": "GTM breaks for several distinct reasons, not one. Name yours, then diagnose exactly where it shows up with Pathway's 10-point GTM Health Check.",
-    "scope": "generic",
-    "backing": [
-      "star",
-      "resource"
-    ]
+    "wikiRefs": []
   },
   {
     "id": "2",
     "title": "The Structure Behind a Team That Can Scale",
     "slug": "blog-agility-coordination",
     "wp": "Agility & Coordination",
+    "scope": "focused",
+    "backing": [
+      "star"
+    ],
     "source": "star-hyperion-team-recovery + star-ericsson-cloud-structure-to-scale",
     "category": "gtm-readiness",
     "format": "Long-form Insight",
@@ -31,9 +36,9 @@
     "draftFile": "drafts/02-blog-agility-coordination.md",
     "heroImage": null,
     "teaser": "",
-    "scope": "focused",
-    "backing": [
-      "star"
+    "wikiRefs": [
+      "career/stars/star-hyperion-team-recovery.md",
+      "career/stars/star-ericsson-cloud-structure-to-scale.md"
     ]
   },
   {
@@ -41,6 +46,10 @@
     "title": "Setting Targets Before You Have Proof",
     "slug": "blog-gtm-target-strategy",
     "wp": "GTM Target & Strategy",
+    "scope": "focused",
+    "backing": [
+      "star"
+    ],
     "source": "star-ericsson-cloud-growth-plan",
     "category": "gtm-readiness",
     "format": "Long-form Insight",
@@ -49,9 +58,8 @@
     "draftFile": "drafts/03-blog-gtm-target-strategy.md",
     "heroImage": null,
     "teaser": "",
-    "scope": "focused",
-    "backing": [
-      "star"
+    "wikiRefs": [
+      "career/stars/star-ericsson-cloud-growth-plan.md"
     ]
   },
   {
@@ -59,6 +67,10 @@
     "title": "Jobs, Not Personas: Rethinking ICP",
     "slug": "blog-icp-customer-experience",
     "wp": "ICP & Customer Experience",
+    "scope": "focused",
+    "backing": [
+      "resource"
+    ],
     "source": "JTBD (Ulwick) + Gartner journey-mapping",
     "category": "gtm-readiness",
     "format": "Long-form Insight",
@@ -67,9 +79,9 @@
     "draftFile": "drafts/04-blog-icp-customer-experience.md",
     "heroImage": null,
     "teaser": "",
-    "scope": "focused",
-    "backing": [
-      "resource"
+    "wikiRefs": [
+      "product-gtm/jtbd-outcome-driven-innovation.md",
+      "product-gtm/gartner-customer-journey-mapping.md"
     ]
   },
   {
@@ -77,6 +89,10 @@
     "title": "The GTM Failure Five Sources Keep Naming",
     "slug": "blog-customer-messaging",
     "wp": "Customer Messaging",
+    "scope": "focused",
+    "backing": [
+      "resource"
+    ],
     "source": "Cognism/HubSpot/House of Revenue/ZoomInfo failure cluster",
     "category": "gtm-readiness",
     "format": "Long-form Insight",
@@ -85,16 +101,17 @@
     "draftFile": "drafts/05-blog-customer-messaging.md",
     "heroImage": null,
     "teaser": "",
-    "scope": "focused",
-    "backing": [
-      "resource"
-    ]
+    "wikiRefs": []
   },
   {
     "id": "6",
     "title": "Should We Even Pursue This?",
     "slug": "blog-lead-generation",
     "wp": "Lead Generation",
+    "scope": "focused",
+    "backing": [
+      "star"
+    ],
     "source": "star-schreder-lead-qualification",
     "category": "deal-generation",
     "format": "Long-form Insight",
@@ -103,9 +120,8 @@
     "draftFile": "drafts/06-blog-lead-generation.md",
     "heroImage": null,
     "teaser": "",
-    "scope": "focused",
-    "backing": [
-      "star"
+    "wikiRefs": [
+      "career/stars/star-schreder-lead-qualification.md"
     ]
   }
 ]
