@@ -98,32 +98,6 @@
           </div>
           <div class="form-group"><label for="email">Endereço de Email</label><input type="email" id="email" placeholder="joao@empresa.com" required /></div>
           <div class="form-group"><label for="company">Empresa</label><input type="text" id="company" placeholder="Nome da Sua Empresa" /></div>
-          <div class="form-group">
-            <label for="role">A Sua Função</label>
-            <select id="role">
-              <option value="">Selecione a sua função...</option>
-              <option>CEO / Fundador</option>
-              <option>CRO / VP de Vendas</option>
-              <option>CMO / VP de Marketing</option>
-              <option>COO / VP de Operações</option>
-              <option>Operating Partner de PE/VC</option>
-              <option>Outro Executivo</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="context">O que gostaria de discutir?</label>
-            <select id="context">
-              <option value="">Selecione um tópico...</option>
-              <option>Estratégia e Consultoria de GTM</option>
-              <option>Liderança Fracionada / Interina</option>
-              <option>Acompanhamento Integrado</option>
-              <option>Gestão de Programas</option>
-              <option>Capacitação Tecnológica</option>
-              <option>Apoio a Portefólios de PE/VC</option>
-              <option>Pedido de Parceria</option>
-              <option>Conversa Geral</option>
-            </select>
-          </div>
           <div class="form-group"><label for="message">Conte-nos mais</label><textarea id="message" placeholder="Partilhe um pouco sobre a sua situação, o que pretende alcançar, e os desafios que enfrenta..."></textarea></div>
           <button type="submit" class="btn btn-accent btn-lg" style="width:100%;">Enviar Mensagem</button>
           <p style="font-size:0.75rem; text-align:center; margin-top:8px; color:var(--mid-grey);">Respeitamos a sua privacidade. Sem spam, nunca.</p>
@@ -208,8 +182,6 @@
           lastName:  document.getElementById('lastName').value,
           email:     document.getElementById('email').value,
           company:   document.getElementById('company').value,
-          role:      document.getElementById('role').value,
-          context:   document.getElementById('context').value,
           message:   document.getElementById('message').value,
         }),
       });

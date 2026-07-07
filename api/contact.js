@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { firstName, lastName, email, company, role, context, message } = req.body || {};
+  const { firstName, lastName, email, company, message } = req.body || {};
 
   if (!firstName || !email || !message) {
     return res.status(400).json({ error: 'Missing required fields' });
@@ -24,8 +24,6 @@ export default async function handler(req, res) {
     <p><strong>Name:</strong> ${fullName}</p>
     <p><strong>Email:</strong> ${esc(email)}</p>
     ${company ? `<p><strong>Company:</strong> ${esc(company)}</p>` : ''}
-    ${role ? `<p><strong>Role:</strong> ${esc(role)}</p>` : ''}
-    ${context ? `<p><strong>Topic:</strong> ${esc(context)}</p>` : ''}
     <p><strong>Message:</strong></p>
     <p style="white-space:pre-wrap">${esc(message)}</p>
   `;

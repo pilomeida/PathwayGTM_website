@@ -98,32 +98,6 @@
           </div>
           <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@company.com" required /></div>
           <div class="form-group"><label for="company">Company</label><input type="text" id="company" placeholder="Your Company Name" /></div>
-          <div class="form-group">
-            <label for="role">Your Role</label>
-            <select id="role">
-              <option value="">Select your role...</option>
-              <option>CEO / Founder</option>
-              <option>CRO / VP Sales</option>
-              <option>CMO / VP Marketing</option>
-              <option>COO / VP Operations</option>
-              <option>PE/VC Operating Partner</option>
-              <option>Other Executive</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="context">What would you like to discuss?</label>
-            <select id="context">
-              <option value="">Select a topic...</option>
-              <option>GTM Strategy &amp; Advisory</option>
-              <option>Fractional / Interim Leadership</option>
-              <option>Embedded Shadowing</option>
-              <option>Program Management</option>
-              <option>Technology Enablement</option>
-              <option>PE/VC Portfolio Support</option>
-              <option>Partnership Inquiry</option>
-              <option>General Conversation</option>
-            </select>
-          </div>
           <div class="form-group"><label for="message">Tell us more</label><textarea id="message" placeholder="Share a bit about your situation, what you're trying to achieve, and what challenges you're facing..."></textarea></div>
           <button type="submit" class="btn btn-accent btn-lg" style="width:100%;">Send Message</button>
           <p style="font-size:0.75rem; text-align:center; margin-top:8px; color:var(--mid-grey);">We respect your privacy. No spam, ever.</p>
@@ -208,8 +182,6 @@
           lastName:  document.getElementById('lastName').value,
           email:     document.getElementById('email').value,
           company:   document.getElementById('company').value,
-          role:      document.getElementById('role').value,
-          context:   document.getElementById('context').value,
           message:   document.getElementById('message').value,
         }),
       });

@@ -98,32 +98,6 @@
           </div>
           <div class="form-group"><label for="email">Correo Electrónico</label><input type="email" id="email" placeholder="juan@empresa.com" required /></div>
           <div class="form-group"><label for="company">Empresa</label><input type="text" id="company" placeholder="Nombre de su Empresa" /></div>
-          <div class="form-group">
-            <label for="role">Su Cargo</label>
-            <select id="role">
-              <option value="">Seleccione su cargo...</option>
-              <option>CEO / Fundador</option>
-              <option>CRO / Director de Ventas</option>
-              <option>CMO / Director de Marketing</option>
-              <option>COO / Director de Operaciones</option>
-              <option>Socio Operativo de PE/VC</option>
-              <option>Otro Cargo Ejecutivo</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="context">¿Qué le gustaría tratar?</label>
-            <select id="context">
-              <option value="">Seleccione un tema...</option>
-              <option>Estrategia y Asesoría de GTM</option>
-              <option>Liderazgo Fraccional / Interino</option>
-              <option>Acompañamiento Integrado</option>
-              <option>Gestión de Programas</option>
-              <option>Capacitación Tecnológica</option>
-              <option>Apoyo a Carteras de PE/VC</option>
-              <option>Consulta sobre Colaboración</option>
-              <option>Conversación General</option>
-            </select>
-          </div>
           <div class="form-group"><label for="message">Cuéntenos Más</label><textarea id="message" placeholder="Comparta un poco sobre su situación, lo que intenta lograr y los desafíos a los que se enfrenta..."></textarea></div>
           <button type="submit" class="btn btn-accent btn-lg" style="width:100%;">Enviar Mensaje</button>
           <p style="font-size:0.75rem; text-align:center; margin-top:8px; color:var(--mid-grey);">Respetamos su privacidad. Sin spam, nunca.</p>
@@ -208,8 +182,6 @@
           lastName:  document.getElementById('lastName').value,
           email:     document.getElementById('email').value,
           company:   document.getElementById('company').value,
-          role:      document.getElementById('role').value,
-          context:   document.getElementById('context').value,
           message:   document.getElementById('message').value,
         }),
       });
